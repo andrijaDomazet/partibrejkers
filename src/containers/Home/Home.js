@@ -1,12 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Home.scss";
+import partibrejkers from '../../images/partibrejkersi.jpg'
 
-export default class Home extends Component {
-  render() {
+function Home() {
     return (
-      <div>
-        <p>Home component</p>
-      </div>
-    );
-  }
+        <div className="overlay">
+			<div id="home">
+				<img src={partibrejkers} alt="partibrejkers"/>
+			</div>
+        </div>
+    )
 }
+
+export default Home;

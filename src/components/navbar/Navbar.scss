@@ -1,14 +1,24 @@
 @import "../../index.scss";
 
-.navbar-light .navbar-nav .nav-link {
-    color: $red;
-    font-size: 22px;  
+.navbar-nav {
+    .nav-link {
+        color: $red !important;
+        font-size: 22px !important; 
+        display: flex !important; 
+        justify-content: center;   
+    }
+    .nav-link:hover {
+        color: rgb(252, 115, 115) !important;
+    }
 }
-.navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(214, 83, 83);
+.dropdown .nav-item {
+    margin: auto !important;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active {
-    color: rgb(158, 18, 18);
+.mr-auto {
+    margin: 0 !important;
+}
+.navbar-nav .active>.nav-link, .navbar-nav .nav-link.active {
+    color: rgb(238, 105, 105) !important;   
 }
 .bg-dark {
     background-color: #000000!important; 
@@ -16,14 +26,49 @@
 #basic-navbar-nav {
     width: 400px !important;    
 }
-.navbar-light .navbar-toggler {
-    background-color:  rgb(172, 18, 18); 
-    border-color: $red;
+.navbar-toggler {  
+    border-color: $red !important;
     padding: .25rem .65rem;
+    margin: 4.5px;
+}
+.navbar-toggler-icon {
+    background-image: url('../../images/burger.png') !important;
 }
 button.navbar-toggler:focus {
     outline: none;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: rgb(158, 18, 18);
+.dropdown-toggle::after {
+    margin-top: 12px;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse { 
+        justify-content: center
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+    }
+}
+.dropdown-menu {
+    background-color: #000;
+    color: $red !important;
+}
+.dropdown-item { 
+    color: $red;
+}
+.dropdown-item:hover{ 
+    color:  rgb(252, 115, 115);
+    background-color: #000;
+}
+.d-inline-block .align-top {  
+    width: 85px;  
+    height: 70px;    
+}
+.navbar .navbar-expand-lg .navbar-light bg-dark{
+    height: 75px !important;
+}
+.d-inline-block {   
+    height: 65px;
+    width: 80px;
+    position: absolute;
+    top: 0;
 }

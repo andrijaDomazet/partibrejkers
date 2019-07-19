@@ -1,1 +1,11 @@
 @import "../../index.scss";
+
+.overlay {
+    background-color: rgba(0, 0, 0, .6);
+
+    #home{
+        img {
+            width: 100%;
+        }    
+    }
+}
