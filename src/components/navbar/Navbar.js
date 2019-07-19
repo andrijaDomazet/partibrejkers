@@ -10,7 +10,7 @@ import './Navbar.scss'
 
 function NavbarMain() {
     return (
-        <Navbar bg="dark" expand="lg">
+        <Navbar bg="dark" expand="lg" fixed="top">
             <Navbar.Brand href="#home">
                 <img src={logo} 
                     width="60"
